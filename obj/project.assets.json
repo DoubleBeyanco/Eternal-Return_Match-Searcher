@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Home\\Desktop\\XR_Game Devloper\\Ethernal Return_Match Seacher\\Eternal Return_Match Seacher.csproj",
+      "projectUniqueName": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\Eternal Return_Match Seacher.csproj",
       "projectName": "Eternal Return_Match Seacher",
-      "projectPath": "C:\\Users\\Home\\Desktop\\XR_Game Devloper\\Ethernal Return_Match Seacher\\Eternal Return_Match Seacher.csproj",
+      "projectPath": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\Eternal Return_Match Seacher.csproj",
       "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Home\\Desktop\\XR_Game Devloper\\Ethernal Return_Match Seacher\\obj\\",
+      "outputPath": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",

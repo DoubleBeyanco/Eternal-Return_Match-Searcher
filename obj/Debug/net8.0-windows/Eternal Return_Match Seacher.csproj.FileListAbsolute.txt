@@ -1,0 +1,20 @@
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Eternal Return_Match Seacher.exe
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Eternal Return_Match Seacher.deps.json
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Eternal Return_Match Seacher.runtimeconfig.json
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Eternal Return_Match Seacher.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Eternal Return_Match Seacher.pdb
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Seacher.csproj.AssemblyReference.cache
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Ethernal_Return_Match_Seacher.MainForm.resources
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Seacher.csproj.GenerateResource.cache
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Seacher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Seacher.AssemblyInfoInputs.cache
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Seacher.AssemblyInfo.cs
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Seacher.csproj.CoreCompileInputs.cache
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Seacher.sourcelink.json
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal .1D87AD11.Up2Date
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Seacher.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\refint\Eternal Return_Match Seacher.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Seacher.pdb
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Seacher.genruntimeconfig.cache
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\ref\Eternal Return_Match Seacher.dll

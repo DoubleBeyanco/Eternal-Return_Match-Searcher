@@ -20,7 +20,8 @@ namespace Ethernal_Return_Match_Seacher
 
         private void SearchBtn_Click(object sender, EventArgs e)
         {
-            
+            onClickCallback?.Invoke(Input_Text);
         }
+
     }
 }

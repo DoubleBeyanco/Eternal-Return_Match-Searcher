@@ -294,6 +294,7 @@ class BSAPI
             var j = ret["userStats"][0];
 
             temp.seasonId = (int)j["seasonId"];
+            temp.userNum = (int)j["userNum"];
             temp.matchingMode = (matchMode)(int)j["matchingMode"];
             temp.matchingTeamMode = (teamType)(int)j["matchingTeamMode"];
             temp.mmr = (int)j["mmr"];
