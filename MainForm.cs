@@ -22,6 +22,5 @@ namespace Ethernal_Return_Match_Seacher
         {
             onClickCallback?.Invoke(Input_Text);
         }
-
     }
 }

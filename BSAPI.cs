@@ -4,7 +4,8 @@ using Newtonsoft.Json.Linq;
 class BSAPI
 {
     // Input APiKey
-    public const string APIKey = "qfURoiLJOu4aZTdTE4wpC755fdg2R9QIbRmSKdbc";
+    private const string APIKey = "qfURoiLJOu4aZTdTE4wpC755fdg2R9QIbRmSKdbc";
+    #region 기본적인 정보
     public struct UserStat
     {
         public int seasonId; //Inputed Season ID
@@ -139,16 +140,10 @@ class BSAPI
         Darko = 74,
         Lenore = 75,
     }
-
+    #endregion
     public static Dictionary<characterCode, string> CharacterStringTable = new Dictionary<characterCode, string>();
 
-    /*private static void Main(string[] args)
-    {
-        //Console.WriteLine(GetUserNum("Droid22"));
-        //GetGameData("hash");
-        //Console.WriteLine(GetCurSeasonNum());
-        GetUserStat(GetCurSeasonNum(), GetUserNum("Droid22"));
-    }*/
+
     /// <summary>
     /// Find User ID, Return Integer Value;
     /// </summary>
@@ -172,7 +167,17 @@ class BSAPI
 
             JObject ret = JObject.Parse(resp);
 
-            return (int)ret["user"]["userNum"];
+            Console.WriteLine(ret);
+
+            if ((int)ret["code"] == 200)
+            {
+                return (int)ret["user"]["userNum"];
+            }
+            else
+            {
+                return -1;
+            }
+            
         }
         catch (Exception ex)
         {
@@ -236,14 +241,21 @@ class BSAPI
 
             JObject ret = JObject.Parse(resp);
 
-            //Console.WriteLine(ret);
-            foreach (JObject j in ret["data"])
+            if ((int)ret["code"] == 200)
             {
-                if ((int)j["isCurrent"] == 1)
+                foreach (JObject j in ret["data"])
                 {
-                    return (int)j["seasonID"];
+                    if ((int)j["isCurrent"] == 1)
+                    {
+                        return (int)j["seasonID"];
+                    }
                 }
             }
+            else
+            {
+                return -1;
+            }
+            
         }
         catch (Exception ex)
         {
@@ -262,7 +274,6 @@ class BSAPI
     /// <returns></returns>
     public static UserStat GetUserStat(int _seasonId, int _userNum)
     {
-        InputCharactorKorString();
         string url = $"https://open-api.bser.io/v1/user/stats/{_userNum}/{_seasonId}";
 
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
@@ -311,11 +322,11 @@ class BSAPI
             temp.averageKills = (float)j["averageKills"];
             temp.averageAssistants = (float)j["averageAssistants"];
             temp.averageHunts = (float)j["averageHunts"];
-            temp.top1 = (float)j["top1"];
-            temp.top2 = (float)j["top2"];
-            temp.top3 = (float)j["top3"];
-            temp.top5 = (float)j["top5"];
-            temp.top7 = (float)j["top7"];
+            temp.top1 = (float)j["top1"] * 100;
+            temp.top2 = (float)j["top2"] * 100;
+            temp.top3 = (float)j["top3"] * 100;
+            temp.top5 = (float)j["top5"] * 100;
+            temp.top7 = (float)j["top7"] * 100;
 
 
             for (int i = 0; i < 3; ++i)
@@ -336,7 +347,7 @@ class BSAPI
             temp.Most3 = charstattemp[2];
 
 
-            Console.WriteLine(temp.Most1.characterCode);
+            //Console.WriteLine(temp.Most1.characterCode);
             //Console.WriteLine(ret["userStats"][0]["characterStats"]);
 
             return temp;
@@ -344,12 +355,15 @@ class BSAPI
         catch (Exception ex)
         {
             Console.WriteLine("Exception: " + ex.Message);
+            UserStat temp = new UserStat();
+            temp.nickname = "닉네임 탐지 오류";
+            return temp;
         }
 
-        return new UserStat();
+        
     }
 
-    private static void InputCharactorKorString()
+    public static void InputCharactorKorString()
     {
         CharacterStringTable.Add(characterCode.Jackie, "재키");
         CharacterStringTable.Add(characterCode.Aya, "아야");

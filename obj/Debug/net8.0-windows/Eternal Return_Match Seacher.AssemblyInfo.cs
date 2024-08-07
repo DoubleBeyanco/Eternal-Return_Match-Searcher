@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eternal Return_Match Seacher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92d24e52a8ab389c9e471e878080028472e4b862")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0de19ee2017d3dbd6a3b322c30a0c0ab39ea72c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eternal Return_Match Seacher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eternal Return_Match Seacher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
