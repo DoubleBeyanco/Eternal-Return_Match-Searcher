@@ -5,6 +5,7 @@ using Sdcb.PaddleOCR.Models;
 using Sdcb.PaddleOCR;
 using Sdcb.PaddleOCR.Models.Local;
 using System;
+using Ethernal_Return_Match_Seacher;
 
 public class OCR
 {
@@ -141,6 +142,7 @@ public class OCR
         // 이 방식 활용하면 최소 한국어 중국어 영어 일본어를 전체 순회하면서 일치율 0.9가 넘는 애들로만 닉을 추적해야할 듯하다.
         // 좌표값은 큰 차이가 안날 것이기 때문에 좌표 범위 설정하고 그 안에 있는 문자열만 추적하도록 하면될 듯하다.
 
+        MainApp.main.Process_Text.Text = "OCR 한글 판독중...";
 
         FullOcrModel model = LocalFullModels.KoreanV4;
 
@@ -179,6 +181,7 @@ public class OCR
         // 이 방식 활용하면 최소 한국어 중국어 영어 일본어를 전체 순회하면서 일치율 0.9가 넘는 애들로만 닉을 추적해야할 듯하다.
         // 좌표값은 큰 차이가 안날 것이기 때문에 좌표 범위 설정하고 그 안에 있는 문자열만 추적하도록 하면될 듯하다.
 
+        MainApp.main.Process_Text.Text = "OCR 중문 판독중...";
 
         FullOcrModel model = LocalFullModels.ChineseV4;
 
@@ -217,6 +220,7 @@ public class OCR
         // 이 방식 활용하면 최소 한국어 중국어 영어 일본어를 전체 순회하면서 일치율 0.9가 넘는 애들로만 닉을 추적해야할 듯하다.
         // 좌표값은 큰 차이가 안날 것이기 때문에 좌표 범위 설정하고 그 안에 있는 문자열만 추적하도록 하면될 듯하다.
 
+        MainApp.main.Process_Text.Text = "OCR 일문 판독중...";
 
         FullOcrModel model = LocalFullModels.JapanV4;
 
@@ -255,6 +259,7 @@ public class OCR
         // 이 방식 활용하면 최소 한국어 중국어 영어 일본어를 전체 순회하면서 일치율 0.9가 넘는 애들로만 닉을 추적해야할 듯하다.
         // 좌표값은 큰 차이가 안날 것이기 때문에 좌표 범위 설정하고 그 안에 있는 문자열만 추적하도록 하면될 듯하다.
 
+        MainApp.main.Process_Text.Text = "OCR 영문 판독중...";
 
         FullOcrModel model = LocalFullModels.EnglishV4;
 

@@ -53,6 +53,7 @@
             label49 = new Label();
             M2_CharacterCode = new Label();
             label47 = new Label();
+            M2_totalGames = new Label();
             label36 = new Label();
             M2_maxKill = new Label();
             label34 = new Label();
@@ -103,7 +104,6 @@
             P1_Top2 = new Label();
             P1_WinRate = new Label();
             P1_RP = new Label();
-            M2_totalGames = new Label();
             Player1_GroupBox.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -400,6 +400,15 @@
             label47.Size = new Size(54, 13);
             label47.TabIndex = 42;
             label47.Text = "총 게임 수";
+            // 
+            // M2_totalGames
+            // 
+            M2_totalGames.AutoSize = true;
+            M2_totalGames.Location = new Point(63, 36);
+            M2_totalGames.Name = "M2_totalGames";
+            M2_totalGames.Size = new Size(33, 13);
+            M2_totalGames.TabIndex = 43;
+            M2_totalGames.Text = "Text";
             // 
             // label36
             // 
@@ -899,15 +908,6 @@
             P1_RP.TabIndex = 0;
             P1_RP.Text = "RP :";
             // 
-            // M2_totalGames
-            // 
-            M2_totalGames.AutoSize = true;
-            M2_totalGames.Location = new Point(63, 36);
-            M2_totalGames.Name = "M2_totalGames";
-            M2_totalGames.Size = new Size(33, 13);
-            M2_totalGames.TabIndex = 43;
-            M2_totalGames.Text = "Text";
-            // 
             // UserSearchResult
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -915,6 +915,7 @@
             ClientSize = new Size(321, 520);
             Controls.Add(Player1_GroupBox);
             Controls.Add(label2);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "UserSearchResult";
             Text = "UserSearchResult";
             Player1_GroupBox.ResumeLayout(false);

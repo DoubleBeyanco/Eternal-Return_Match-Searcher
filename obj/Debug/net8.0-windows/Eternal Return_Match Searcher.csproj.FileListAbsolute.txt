@@ -1,0 +1,41 @@
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Searcher.csproj.AssemblyReference.cache
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Ethernal_Return_Match_Seacher.MainForm.resources
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Ethernal_Return_Match_Seacher.UserSearchResult.resources
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Searcher.csproj.GenerateResource.cache
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Searcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Searcher.AssemblyInfoInputs.cache
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Searcher.AssemblyInfo.cs
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Searcher.csproj.CoreCompileInputs.cache
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Searcher.sourcelink.json
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Eternal Return_Match Searcher.exe
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Eternal Return_Match Searcher.deps.json
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Eternal Return_Match Searcher.runtimeconfig.json
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Eternal Return_Match Searcher.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Eternal Return_Match Searcher.pdb
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\OpenCvSharp.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Sdcb.PaddleInference.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Sdcb.PaddleOCR.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Sdcb.PaddleOCR.Models.Local.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Sdcb.PaddleOCR.Models.LocalV3.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Sdcb.PaddleOCR.Models.LocalV4.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\Sdcb.PaddleOCR.Models.Shared.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\runtimes\win-x64\native\OpenCvSharpExtern.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\runtimes\win-x64\native\opencv_videoio_ffmpeg4100_64.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\runtimes\win-x86\native\OpenCvSharpExtern.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\runtimes\win-x86\native\opencv_videoio_ffmpeg4100.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\runtimes\win-x64\native\libiomp5md.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\runtimes\win-x64\native\mklml.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\runtimes\win-x64\native\onnxruntime.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\runtimes\win-x64\native\onnxruntime_providers_shared.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\runtimes\win-x64\native\paddle2onnx.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\runtimes\win-x64\native\mkldnn.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\bin\Debug\net8.0-windows\runtimes\win-x64\native\paddle_inference_c.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal .617267A5.Up2Date
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Searcher.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\refint\Eternal Return_Match Searcher.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Searcher.pdb
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Eternal Return_Match Searcher.genruntimeconfig.cache
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\ref\Eternal Return_Match Searcher.dll
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Ethernal_Return_Match_Searcher.HelpBox.resources
+C:\Users\Home\Documents\GitHub\Eternal-Return_Match-Seacher\obj\Debug\net8.0-windows\Ethernal_Return_Match_Searcher.Properties.Resources.resources

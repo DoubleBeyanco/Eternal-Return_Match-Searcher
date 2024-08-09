@@ -1,6 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 using System.Drawing.Imaging;
 using System.Diagnostics;
+using Ethernal_Return_Match_Seacher;
 
 
 public class ScreenCapture
@@ -27,6 +28,7 @@ public class ScreenCapture
 
     private Bitmap CaptureApplication(string procName)
     {
+        MainApp.main.Process_Text.Text = "스크린 샷 촬영 중...";
         Process proc;
 
         // Cater for cases when the process can`t be located

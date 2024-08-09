@@ -5,14 +5,35 @@ using System.Reflection;
 
 public class MainApp
 {
-    static MainForm main = new MainForm();
-    static UserSearchResult searchResult = new UserSearchResult();
+    public static MainForm main = new MainForm();
+    public static UserSearchResult searchResult = new UserSearchResult();
     public static string path = string.Empty;
     //public static string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
     private static void Main(string[] args)
     {
         ApplicationConfiguration.Initialize();
         path = Path.GetTempPath();
+
+        FieldInfo[] fields = typeof(MainForm).GetFields(BindingFlags.Public | BindingFlags.Instance);
+
+        var labelFields = new List<Label>();
+
+        foreach (var field in fields)
+        {
+            if (field.FieldType == typeof(Label))
+            {
+                labelFields.Add((Label)field.GetValue(main));
+            }
+        }
+
+        foreach (var label in labelFields)
+        {
+            if (label != null)
+            {
+                label.Text = String.Empty;
+            }
+        }
+
         DirectoryInfo di = new DirectoryInfo(path + @"\images");
 
         if (di.Exists == false)
@@ -63,15 +84,9 @@ public class MainApp
             BSAPI.UserStat stat;
             int usernum = BSAPI.GetUserNum(nicknames[i]);
 
-            if (usernum != -1)
-            {
-                stat = BSAPI.GetUserStat(BSAPI.GetCurSeasonNum(), usernum);
-            }
-            else
-            {
-                stat = BSAPI.GetUserStat(BSAPI.GetCurSeasonNum(), usernum);
-            }
+            stat = BSAPI.GetUserStat(BSAPI.GetCurSeasonNum(), usernum);
 
+            main.Process_Text.Text = $"{i + 1}번째 유저 검색중...";
             switch (i)
             {
                 case 0:
@@ -87,7 +102,9 @@ public class MainApp
                     InputUserAInfo(stat);
                     break;
             }
-        } 
+        }
+
+        main.Process_Text.Text = "검색 완료!";
     }
 
     private static void InputUserAInfo(BSAPI.UserStat userstat)

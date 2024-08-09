@@ -36,6 +36,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             TextLabel1 = new Label();
             Input_nick = new TextBox();
             Btn_Search = new Button();
@@ -266,6 +267,7 @@
             label180 = new Label();
             label181 = new Label();
             Process_Text = new Label();
+            pictureBox1 = new PictureBox();
             Player1_GroupBox.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -278,6 +280,7 @@
             groupBox9.SuspendLayout();
             groupBox10.SuspendLayout();
             groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // TextLabel1
@@ -1097,9 +1100,9 @@
             // button1
             // 
             button1.Font = new Font("Maplestory", 8.999999F);
-            button1.Location = new Point(18, 9);
+            button1.Location = new Point(14, 6);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(79, 26);
             button1.TabIndex = 6;
             button1.Text = "매치 탐색";
             button1.UseVisualStyleBackColor = true;
@@ -2679,15 +2682,28 @@
             Process_Text.Font = new Font("Maplestory", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 129);
             Process_Text.Location = new Point(112, 13);
             Process_Text.Name = "Process_Text";
-            Process_Text.Size = new Size(33, 13);
+            Process_Text.Size = new Size(208, 13);
             Process_Text.TabIndex = 79;
-            Process_Text.Text = "Text";
+            Process_Text.Text = "Ethernal_Return_Match_Searcher";
+            Process_Text.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(864, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(30, 30);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 80;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(906, 524);
+            Controls.Add(pictureBox1);
             Controls.Add(Process_Text);
             Controls.Add(groupBox8);
             Controls.Add(groupBox4);
@@ -2696,8 +2712,9 @@
             Controls.Add(Btn_Search);
             Controls.Add(Input_nick);
             Controls.Add(TextLabel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "MainForm";
-            Text = "Ethernal Return: Match Seacher";
+            Text = "Ethernal Return: Match Searcher";
             Player1_GroupBox.ResumeLayout(false);
             Player1_GroupBox.PerformLayout();
             groupBox3.ResumeLayout(false);
@@ -2722,6 +2739,7 @@
             groupBox10.PerformLayout();
             groupBox11.ResumeLayout(false);
             groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -2965,6 +2983,7 @@
         public Label P3_M3_Top3;
         public Label P2_M3_CharacterCode;
         public Label P3_M3_CharacterCode;
-        private Label Process_Text;
+        private PictureBox pictureBox1;
+        public Label Process_Text;
     }
 }

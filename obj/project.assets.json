@@ -528,9 +528,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\Eternal Return_Match Seacher.csproj",
-      "projectName": "Eternal Return_Match Seacher",
-      "projectPath": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\Eternal Return_Match Seacher.csproj",
+      "projectUniqueName": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\Eternal Return_Match Searcher.csproj",
+      "projectName": "Eternal Return_Match Searcher",
+      "projectPath": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\Eternal Return_Match Searcher.csproj",
       "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\obj\\",
       "projectStyle": "PackageReference",

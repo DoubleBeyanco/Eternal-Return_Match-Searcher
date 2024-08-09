@@ -1,3 +1,5 @@
+using Ethernal_Return_Match_Searcher;
+
 namespace Ethernal_Return_Match_Seacher
 {
     public partial class MainForm : Form
@@ -21,6 +23,13 @@ namespace Ethernal_Return_Match_Seacher
         private void button1_Click(object sender, EventArgs e)
         {
             onSearchCallback?.Invoke();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            HelpBox hb = new HelpBox();
+
+            hb.Show();
         }
     }
 }
