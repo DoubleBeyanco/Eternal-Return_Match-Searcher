@@ -1,0 +1,909 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows7.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.7": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4/4.10.0.20240616": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.10.0.20240616": {
+        "type": "package",
+        "build": {
+          "build/net5.0/OpenCvSharp4.runtime.win.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg4100_64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/opencv_videoio_ffmpeg4100.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "Sdcb.Mkldnn.runtime.win64/0.19.0": {
+        "type": "package",
+        "build": {
+          "build/netcoreapp/Sdcb.Mkldnn.runtime.win64.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/libiomp5md.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/mklml.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "Sdcb.Onnx.runtime.win64/1.11.22.423": {
+        "type": "package",
+        "build": {
+          "build/netcoreapp/Sdcb.Onnx.runtime.win64.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/onnxruntime.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/onnxruntime_providers_shared.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "Sdcb.Paddle2Onnx.runtime.win64/1.0.0-rc.2": {
+        "type": "package",
+        "build": {
+          "build/netcoreapp/Sdcb.Paddle2Onnx.runtime.win64.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/paddle2onnx.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "Sdcb.PaddleInference/2.5.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Sdcb.PaddleInference.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Sdcb.PaddleInference.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sdcb.PaddleInference.runtime.win64.mkl/2.6.1": {
+        "type": "package",
+        "dependencies": {
+          "Sdcb.Mkldnn.runtime.win64": "0.19.0",
+          "Sdcb.Onnx.runtime.win64": "1.11.22.423",
+          "Sdcb.Paddle2Onnx.runtime.win64": "1.0.0-rc.2"
+        },
+        "build": {
+          "build/netcoreapp/Sdcb.PaddleInference.runtime.win64.mkl.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/mkldnn.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/paddle_inference_c.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "Sdcb.PaddleOCR/2.7.0.3": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.10.0.20240616",
+          "Sdcb.PaddleInference": "2.5.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sdcb.PaddleOCR.Models.Local/2.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Sdcb.PaddleOCR": "2.7.0",
+          "Sdcb.PaddleOCR.Models.LocalV3": "2.7.0",
+          "Sdcb.PaddleOCR.Models.LocalV4": "2.7.0",
+          "Sdcb.PaddleOCR.Models.Shared": "2.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.Models.Local.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.Models.Local.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sdcb.PaddleOCR.Models.LocalV3/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.Models.LocalV3.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.Models.LocalV3.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sdcb.PaddleOCR.Models.LocalV4/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.Models.LocalV4.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.Models.LocalV4.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sdcb.PaddleOCR.Models.Shared/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.Models.Shared.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.Models.Shared.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      }
+    },
+    "net8.0-windows7.0/win-x64": {
+      "Microsoft.NET.ILLink.Tasks/8.0.7": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4/4.10.0.20240616": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.10.0.20240616": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {},
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg4100_64.dll": {}
+        },
+        "build": {
+          "build/net5.0/OpenCvSharp4.runtime.win.props": {}
+        }
+      },
+      "Sdcb.Mkldnn.runtime.win64/0.19.0": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x64/native/libiomp5md.dll": {},
+          "runtimes/win-x64/native/mklml.dll": {}
+        },
+        "build": {
+          "build/netcoreapp/Sdcb.Mkldnn.runtime.win64.props": {}
+        }
+      },
+      "Sdcb.Onnx.runtime.win64/1.11.22.423": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x64/native/onnxruntime.dll": {},
+          "runtimes/win-x64/native/onnxruntime_providers_shared.dll": {}
+        },
+        "build": {
+          "build/netcoreapp/Sdcb.Onnx.runtime.win64.props": {}
+        }
+      },
+      "Sdcb.Paddle2Onnx.runtime.win64/1.0.0-rc.2": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x64/native/paddle2onnx.dll": {}
+        },
+        "build": {
+          "build/netcoreapp/Sdcb.Paddle2Onnx.runtime.win64.props": {}
+        }
+      },
+      "Sdcb.PaddleInference/2.5.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Sdcb.PaddleInference.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Sdcb.PaddleInference.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sdcb.PaddleInference.runtime.win64.mkl/2.6.1": {
+        "type": "package",
+        "dependencies": {
+          "Sdcb.Mkldnn.runtime.win64": "0.19.0",
+          "Sdcb.Onnx.runtime.win64": "1.11.22.423",
+          "Sdcb.Paddle2Onnx.runtime.win64": "1.0.0-rc.2"
+        },
+        "native": {
+          "runtimes/win-x64/native/mkldnn.dll": {},
+          "runtimes/win-x64/native/paddle_inference_c.dll": {}
+        },
+        "build": {
+          "build/netcoreapp/Sdcb.PaddleInference.runtime.win64.mkl.props": {}
+        }
+      },
+      "Sdcb.PaddleOCR/2.7.0.3": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.10.0.20240616",
+          "Sdcb.PaddleInference": "2.5.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sdcb.PaddleOCR.Models.Local/2.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Sdcb.PaddleOCR": "2.7.0",
+          "Sdcb.PaddleOCR.Models.LocalV3": "2.7.0",
+          "Sdcb.PaddleOCR.Models.LocalV4": "2.7.0",
+          "Sdcb.PaddleOCR.Models.Shared": "2.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.Models.Local.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.Models.Local.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sdcb.PaddleOCR.Models.LocalV3/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.Models.LocalV3.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.Models.LocalV3.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sdcb.PaddleOCR.Models.LocalV4/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.Models.LocalV4.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.Models.LocalV4.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sdcb.PaddleOCR.Models.Shared/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.Models.Shared.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sdcb.PaddleOCR.Models.Shared.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.NET.ILLink.Tasks/8.0.7": {
+      "sha512": "iI52ptEKby2ymQ6B7h4TWbFmm85T4VvLgc/HvS45Yr3lgi4IIFbQtjON3bQbX/Vc94jXNSLvrDOp5Kh7SJyFYQ==",
+      "type": "package",
+      "path": "microsoft.net.illink.tasks/8.0.7",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "Sdk/Sdk.props",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/cs/ILLink.CodeFixProvider.dll",
+        "analyzers/dotnet/cs/ILLink.RoslynAnalyzer.dll",
+        "build/Microsoft.NET.ILLink.Analyzers.props",
+        "build/Microsoft.NET.ILLink.Tasks.props",
+        "build/Microsoft.NET.ILLink.targets",
+        "microsoft.net.illink.tasks.8.0.7.nupkg.sha512",
+        "microsoft.net.illink.tasks.nuspec",
+        "tools/net472/ILLink.Tasks.dll",
+        "tools/net472/ILLink.Tasks.dll.config",
+        "tools/net472/Mono.Cecil.Mdb.dll",
+        "tools/net472/Mono.Cecil.Pdb.dll",
+        "tools/net472/Mono.Cecil.Rocks.dll",
+        "tools/net472/Mono.Cecil.dll",
+        "tools/net472/Sdk/Sdk.props",
+        "tools/net472/System.Buffers.dll",
+        "tools/net472/System.Collections.Immutable.dll",
+        "tools/net472/System.Memory.dll",
+        "tools/net472/System.Numerics.Vectors.dll",
+        "tools/net472/System.Reflection.Metadata.dll",
+        "tools/net472/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/net472/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net472/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net472/build/Microsoft.NET.ILLink.targets",
+        "tools/net8.0/ILLink.Tasks.deps.json",
+        "tools/net8.0/ILLink.Tasks.dll",
+        "tools/net8.0/Mono.Cecil.Mdb.dll",
+        "tools/net8.0/Mono.Cecil.Pdb.dll",
+        "tools/net8.0/Mono.Cecil.Rocks.dll",
+        "tools/net8.0/Mono.Cecil.dll",
+        "tools/net8.0/Sdk/Sdk.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.targets",
+        "tools/net8.0/illink.deps.json",
+        "tools/net8.0/illink.dll",
+        "tools/net8.0/illink.runtimeconfig.json",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "OpenCvSharp4/4.10.0.20240616": {
+      "sha512": "+iaFSUq0Cp+B9s1sUqDwB3PvQ5HdWWvRE50WsAw1PL8smD3VZNbe0P786E4Yfu7LHM7jeqkulOwjk2CoihsZeg==",
+      "type": "package",
+      "path": "opencvsharp4/4.10.0.20240616",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net48/OpenCvSharp.dll",
+        "lib/net48/OpenCvSharp.xml",
+        "lib/net6.0/OpenCvSharp.dll",
+        "lib/net6.0/OpenCvSharp.xml",
+        "lib/netstandard2.0/OpenCvSharp.dll",
+        "lib/netstandard2.0/OpenCvSharp.xml",
+        "lib/netstandard2.1/OpenCvSharp.dll",
+        "lib/netstandard2.1/OpenCvSharp.xml",
+        "opencvsharp4.4.10.0.20240616.nupkg.sha512",
+        "opencvsharp4.nuspec"
+      ]
+    },
+    "OpenCvSharp4.runtime.win/4.10.0.20240616": {
+      "sha512": "dpQNIR6PpeB/oZM0e0fZpt9lOS3Htjm6ZjtOgLyxN7QwjRekbNevrmO8VbgezUoetk68CRwxYZGaymCm2vt8Sg==",
+      "type": "package",
+      "path": "opencvsharp4.runtime.win/4.10.0.20240616",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net48/OpenCvSharp4.runtime.win.props",
+        "build/net5.0/OpenCvSharp4.runtime.win.props",
+        "build/netcoreapp/OpenCvSharp4.runtime.win.props",
+        "build/netstandard/OpenCvSharp4.runtime.win.props",
+        "opencvsharp4.runtime.win.4.10.0.20240616.nupkg.sha512",
+        "opencvsharp4.runtime.win.nuspec",
+        "runtimes/win-x64/native/OpenCvSharpExtern.dll",
+        "runtimes/win-x64/native/opencv_videoio_ffmpeg4100_64.dll",
+        "runtimes/win-x86/native/OpenCvSharpExtern.dll",
+        "runtimes/win-x86/native/opencv_videoio_ffmpeg4100.dll"
+      ]
+    },
+    "Sdcb.Mkldnn.runtime.win64/0.19.0": {
+      "sha512": "Dbjg2jje+ZV/PTBVsMoso2gAD8jMlwUdv/0U7ySSeHEKYzXLy83MD9VUZXIhorQLz22x2cnqLGhIxPNjAeVt3A==",
+      "type": "package",
+      "path": "sdcb.mkldnn.runtime.win64/0.19.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net/Sdcb.Mkldnn.runtime.win64.props",
+        "build/netcoreapp/Sdcb.Mkldnn.runtime.win64.props",
+        "build/netstandard/Sdcb.Mkldnn.runtime.win64.props",
+        "images/icon.png",
+        "runtimes/win-x64/native/libiomp5md.dll",
+        "runtimes/win-x64/native/mklml.dll",
+        "sdcb.mkldnn.runtime.win64.0.19.0.nupkg.sha512",
+        "sdcb.mkldnn.runtime.win64.nuspec"
+      ]
+    },
+    "Sdcb.Onnx.runtime.win64/1.11.22.423": {
+      "sha512": "wAiAxPES9i6qiRvSV8fgaJvU0+moSkHWuIprUJK1A/1RDAfPZBf1WRh1RkxTdmb4Jnd3vEF7DbbM+vEIqOmNGw==",
+      "type": "package",
+      "path": "sdcb.onnx.runtime.win64/1.11.22.423",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net/Sdcb.Onnx.runtime.win64.props",
+        "build/netcoreapp/Sdcb.Onnx.runtime.win64.props",
+        "build/netstandard/Sdcb.Onnx.runtime.win64.props",
+        "images/icon.png",
+        "runtimes/win-x64/native/onnxruntime.dll",
+        "runtimes/win-x64/native/onnxruntime_providers_shared.dll",
+        "sdcb.onnx.runtime.win64.1.11.22.423.nupkg.sha512",
+        "sdcb.onnx.runtime.win64.nuspec"
+      ]
+    },
+    "Sdcb.Paddle2Onnx.runtime.win64/1.0.0-rc.2": {
+      "sha512": "N9y/jCj+KJ7sw4ZWy0VivJZ6z1J+HTMhI54IxgzwDrhwKMUzGpDkkag9e2zgwXfB6bRNKd05GrlSxOnSMc8Yhw==",
+      "type": "package",
+      "path": "sdcb.paddle2onnx.runtime.win64/1.0.0-rc.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net/Sdcb.Paddle2Onnx.runtime.win64.props",
+        "build/netcoreapp/Sdcb.Paddle2Onnx.runtime.win64.props",
+        "build/netstandard/Sdcb.Paddle2Onnx.runtime.win64.props",
+        "images/icon.jpg",
+        "runtimes/win-x64/native/paddle2onnx.dll",
+        "sdcb.paddle2onnx.runtime.win64.1.0.0-rc.2.nupkg.sha512",
+        "sdcb.paddle2onnx.runtime.win64.nuspec"
+      ]
+    },
+    "Sdcb.PaddleInference/2.5.0.1": {
+      "sha512": "mhTFsVo5U06agc31pA0Wb5kX0H328Dqe9985G6D4aGbU0GXzET4ZUyzFgt8jGD1drFezMY4PdZH63lhMTzpnpQ==",
+      "type": "package",
+      "path": "sdcb.paddleinference/2.5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.jpg",
+        "lib/net45/Sdcb.PaddleInference.dll",
+        "lib/net45/Sdcb.PaddleInference.xml",
+        "lib/net6.0/Sdcb.PaddleInference.dll",
+        "lib/net6.0/Sdcb.PaddleInference.xml",
+        "lib/netstandard2.0/Sdcb.PaddleInference.dll",
+        "lib/netstandard2.0/Sdcb.PaddleInference.xml",
+        "sdcb.paddleinference.2.5.0.1.nupkg.sha512",
+        "sdcb.paddleinference.nuspec"
+      ]
+    },
+    "Sdcb.PaddleInference.runtime.win64.mkl/2.6.1": {
+      "sha512": "DiTSaHZ0JGl8muNkbPv43zHJ7KVvDlahPxHApycsiQ22aN53cGRft5CfPX+DVHfVJurmo0sJ/mUQTLwULniimQ==",
+      "type": "package",
+      "path": "sdcb.paddleinference.runtime.win64.mkl/2.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net/Sdcb.PaddleInference.runtime.win64.mkl.props",
+        "build/netcoreapp/Sdcb.PaddleInference.runtime.win64.mkl.props",
+        "build/netstandard/Sdcb.PaddleInference.runtime.win64.mkl.props",
+        "images/icon.jpg",
+        "runtimes/win-x64/native/mkldnn.dll",
+        "runtimes/win-x64/native/paddle_inference_c.dll",
+        "sdcb.paddleinference.runtime.win64.mkl.2.6.1.nupkg.sha512",
+        "sdcb.paddleinference.runtime.win64.mkl.nuspec"
+      ]
+    },
+    "Sdcb.PaddleOCR/2.7.0.3": {
+      "sha512": "6axepRnF/FSn+sdAsF0nuCjPDu8CfbzJe/6puAHFj00Sin4YUcqUTdDZ1UONHRpMkgJYW1qyzjBnvSmBD4szxQ==",
+      "type": "package",
+      "path": "sdcb.paddleocr/2.7.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.jpg",
+        "lib/netstandard2.0/Sdcb.PaddleOCR.dll",
+        "lib/netstandard2.0/Sdcb.PaddleOCR.xml",
+        "ocr.md",
+        "sdcb.paddleocr.2.7.0.3.nupkg.sha512",
+        "sdcb.paddleocr.nuspec"
+      ]
+    },
+    "Sdcb.PaddleOCR.Models.Local/2.7.0": {
+      "sha512": "/qARARoqGy4YWb/drm/gOFbF3M4bejA9LBGP4TRD6unvefOxokzTW0YI2s4fqhaaAOZNObnYgaE1/q+SmP1NQw==",
+      "type": "package",
+      "path": "sdcb.paddleocr.models.local/2.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.jpg",
+        "lib/netstandard2.0/Sdcb.PaddleOCR.Models.Local.dll",
+        "lib/netstandard2.0/Sdcb.PaddleOCR.Models.Local.xml",
+        "sdcb.paddleocr.models.local.2.7.0.nupkg.sha512",
+        "sdcb.paddleocr.models.local.nuspec"
+      ]
+    },
+    "Sdcb.PaddleOCR.Models.LocalV3/2.7.0": {
+      "sha512": "eqyTyyfOz+cfUvCc7jk1z1eOjUlgmNPyAZzDUqFRv+gs6g2aTdcd0qlWupaAgSDyHOstU/C95PS5hG9jQGakQA==",
+      "type": "package",
+      "path": "sdcb.paddleocr.models.localv3/2.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.jpg",
+        "lib/netstandard2.0/Sdcb.PaddleOCR.Models.LocalV3.dll",
+        "lib/netstandard2.0/Sdcb.PaddleOCR.Models.LocalV3.xml",
+        "sdcb.paddleocr.models.localv3.2.7.0.nupkg.sha512",
+        "sdcb.paddleocr.models.localv3.nuspec"
+      ]
+    },
+    "Sdcb.PaddleOCR.Models.LocalV4/2.7.0": {
+      "sha512": "iKGb/qSPDHca5OXIKWQJqhVFajlolF01EV5PKjD4a8Djv+xXO/y07mBDRnUwj7zSjvmJjMpqiI6suEhGYDMvUA==",
+      "type": "package",
+      "path": "sdcb.paddleocr.models.localv4/2.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.jpg",
+        "lib/netstandard2.0/Sdcb.PaddleOCR.Models.LocalV4.dll",
+        "lib/netstandard2.0/Sdcb.PaddleOCR.Models.LocalV4.xml",
+        "sdcb.paddleocr.models.localv4.2.7.0.nupkg.sha512",
+        "sdcb.paddleocr.models.localv4.nuspec"
+      ]
+    },
+    "Sdcb.PaddleOCR.Models.Shared/2.7.0": {
+      "sha512": "1UlN5XOhO+a5mR82eE5RoCjB2tS4U8SKMnMk1AnQ+HphqcYwo3fHYSmEnxnpGe3/iU2hjRDDFRgOaf339T5gKg==",
+      "type": "package",
+      "path": "sdcb.paddleocr.models.shared/2.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.jpg",
+        "lib/netstandard2.0/Sdcb.PaddleOCR.Models.Shared.dll",
+        "lib/netstandard2.0/Sdcb.PaddleOCR.Models.Shared.xml",
+        "sdcb.paddleocr.models.shared.2.7.0.nupkg.sha512",
+        "sdcb.paddleocr.models.shared.nuspec"
+      ]
+    },
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "type": "package",
+      "path": "system.memory/4.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.5.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0-windows7.0": [
+      "Microsoft.NET.ILLink.Tasks >= 8.0.7",
+      "Newtonsoft.Json >= 13.0.3",
+      "OpenCvSharp4.runtime.win >= 4.10.0.20240616",
+      "Sdcb.PaddleInference >= 2.5.0.1",
+      "Sdcb.PaddleInference.runtime.win64.mkl >= 2.6.1",
+      "Sdcb.PaddleOCR >= 2.7.0.3",
+      "Sdcb.PaddleOCR.Models.Local >= 2.7.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Home\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\Eternal Return_Match Searcher.csproj",
+      "projectName": "Eternal Return_Match Searcher",
+      "projectPath": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\Eternal Return_Match Searcher.csproj",
+      "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\obj\\publish\\win-x64\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows",
+        "dependencies": {
+          "Microsoft.NET.ILLink.Tasks": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[8.0.7, )",
+            "autoReferenced": true
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          },
+          "OpenCvSharp4.runtime.win": {
+            "target": "Package",
+            "version": "[4.10.0.20240616, )"
+          },
+          "Sdcb.PaddleInference": {
+            "target": "Package",
+            "version": "[2.5.0.1, )"
+          },
+          "Sdcb.PaddleInference.runtime.win64.mkl": {
+            "target": "Package",
+            "version": "[2.6.1, )"
+          },
+          "Sdcb.PaddleOCR": {
+            "target": "Package",
+            "version": "[2.7.0.3, )"
+          },
+          "Sdcb.PaddleOCR.Models.Local": {
+            "target": "Package",
+            "version": "[2.7.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+            "version": "[8.0.7, 8.0.7]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-x64",
+            "version": "[8.0.7, 8.0.7]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+            "version": "[8.0.7, 8.0.7]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
+      }
+    }
+  }
+}

@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\eternal return_match searcher.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:eternal return_match searcher.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\mainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:mainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\screencapture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:screencapture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\helpbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:helpbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,16 +43,8 @@
       "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:usersearchresult.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\screencapture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:screencapture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\ocr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:ocr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\mainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:mainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,6 +75,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Eternal Return_Match Searcher",
+              "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\Eternal Return_Match Searcher.csproj",
+              "RelativeDocumentMoniker": "Eternal Return_Match Searcher.csproj",
+              "ToolTip": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\Eternal Return_Match Searcher.csproj",
+              "RelativeToolTip": "Eternal Return_Match Searcher.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-09T13:02:32.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "HelpBox.cs",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\HelpBox.cs",
               "RelativeDocumentMoniker": "HelpBox.cs",
@@ -83,30 +100,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HelpBox.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "HelpBox.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\HelpBox.cs",
               "RelativeDocumentMoniker": "HelpBox.cs",
-              "ToolTip": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\HelpBox.cs [Design]",
-              "RelativeToolTip": "HelpBox.cs [Design]",
+              "ToolTip": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\HelpBox.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "HelpBox.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T11:43:07.709Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserSearchResult.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\UserSearchResult.cs",
-              "RelativeDocumentMoniker": "UserSearchResult.cs",
-              "ToolTip": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\UserSearchResult.cs [Design]",
-              "RelativeToolTip": "UserSearchResult.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T11:32:52.535Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-09T11:43:07.709Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "UserSearchResult.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\UserSearchResult.cs",
+              "RelativeDocumentMoniker": "UserSearchResult.cs",
+              "ToolTip": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\UserSearchResult.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "UserSearchResult.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T11:32:52.535Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "UserSearchResult.cs",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\UserSearchResult.cs",
               "RelativeDocumentMoniker": "UserSearchResult.cs",
@@ -114,11 +132,12 @@
               "RelativeToolTip": "UserSearchResult.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T13:23:37.806Z"
+              "WhenOpened": "2024-08-08T13:23:37.806Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "UserSearchResult.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\UserSearchResult.Designer.cs",
               "RelativeDocumentMoniker": "UserSearchResult.Designer.cs",
@@ -126,11 +145,12 @@
               "RelativeToolTip": "UserSearchResult.Designer.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAAwAkAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T13:21:28.901Z"
+              "WhenOpened": "2024-08-08T13:21:28.901Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "UserSearchResult.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\UserSearchResult.cs",
               "RelativeDocumentMoniker": "UserSearchResult.cs",
@@ -141,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "ScreenCapture.cs",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\ScreenCapture.cs",
               "RelativeDocumentMoniker": "ScreenCapture.cs",
@@ -149,11 +169,12 @@
               "RelativeToolTip": "ScreenCapture.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAD4vy8AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T11:20:18.3Z"
+              "WhenOpened": "2024-08-08T11:20:18.3Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "OCR.cs",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\OCR.cs",
               "RelativeDocumentMoniker": "OCR.cs",
@@ -161,23 +182,25 @@
               "RelativeToolTip": "OCR.cs",
               "ViewState": "AQIAANIAAAAAAAAAAAAewOIAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T09:00:13.972Z"
+              "WhenOpened": "2024-08-08T09:00:13.972Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "MainApp.cs",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\MainApp.cs",
               "RelativeDocumentMoniker": "MainApp.cs",
               "ToolTip": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\MainApp.cs",
               "RelativeToolTip": "MainApp.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAYwAgAAAALAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T13:40:28.145Z"
+              "WhenOpened": "2024-07-29T13:40:28.145Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "MainForm.Designer.cs",
@@ -185,11 +208,12 @@
               "RelativeToolTip": "MainForm.Designer.cs",
               "ViewState": "AQIAALsKAAAAAAAAAAAAAK0LAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T13:33:18.55Z"
+              "WhenOpened": "2024-07-29T13:33:18.55Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
@@ -202,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "BSAPI.cs",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\BSAPI.cs",
               "RelativeDocumentMoniker": "BSAPI.cs",
@@ -210,11 +234,12 @@
               "RelativeToolTip": "BSAPI.cs",
               "ViewState": "AQIAAB4BAAAAAAAAAAAtwDMBAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T13:46:20.861Z"
+              "WhenOpened": "2024-07-29T13:46:20.861Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eternal Return_Match Searcher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3492aa2357515b1b34ec808c8f4bd6a9ef6bcc15")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dee45e1c3270ab71efa9b0ea995e048a371f5a41")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eternal Return_Match Searcher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eternal Return_Match Searcher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

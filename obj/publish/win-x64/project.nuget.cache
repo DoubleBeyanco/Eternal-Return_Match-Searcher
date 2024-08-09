@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "eKiOCz6ISWk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\Eternal Return_Match Searcher.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Home\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.7\\microsoft.net.illink.tasks.8.0.7.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\opencvsharp4\\4.10.0.20240616\\opencvsharp4.4.10.0.20240616.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\opencvsharp4.runtime.win\\4.10.0.20240616\\opencvsharp4.runtime.win.4.10.0.20240616.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\sdcb.mkldnn.runtime.win64\\0.19.0\\sdcb.mkldnn.runtime.win64.0.19.0.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\sdcb.onnx.runtime.win64\\1.11.22.423\\sdcb.onnx.runtime.win64.1.11.22.423.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\sdcb.paddle2onnx.runtime.win64\\1.0.0-rc.2\\sdcb.paddle2onnx.runtime.win64.1.0.0-rc.2.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\sdcb.paddleinference\\2.5.0.1\\sdcb.paddleinference.2.5.0.1.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\sdcb.paddleinference.runtime.win64.mkl\\2.6.1\\sdcb.paddleinference.runtime.win64.mkl.2.6.1.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\sdcb.paddleocr\\2.7.0.3\\sdcb.paddleocr.2.7.0.3.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\sdcb.paddleocr.models.local\\2.7.0\\sdcb.paddleocr.models.local.2.7.0.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\sdcb.paddleocr.models.localv3\\2.7.0\\sdcb.paddleocr.models.localv3.2.7.0.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\sdcb.paddleocr.models.localv4\\2.7.0\\sdcb.paddleocr.models.localv4.2.7.0.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\sdcb.paddleocr.models.shared\\2.7.0\\sdcb.paddleocr.models.shared.2.7.0.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.7\\microsoft.netcore.app.runtime.win-x64.8.0.7.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.7\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.7.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.7\\microsoft.aspnetcore.app.runtime.win-x64.8.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}
