@@ -7,19 +7,11 @@
       "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:helpbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\helpbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\helpbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:helpbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\usersearchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|solutionrelative:usersearchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\usersearchresult.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|solutionrelative:usersearchresult.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\usersearchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\usersearchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:usersearchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -31,28 +23,36 @@
       "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\usersearchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:usersearchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\mainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|solutionrelative:mainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\usersearchresult.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:usersearchresult.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\ocr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|solutionrelative:ocr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\screencapture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:screencapture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\screencapture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|solutionrelative:screencapture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\ocr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:ocr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\mainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:mainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\bsapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Seacher.csproj|solutionrelative:bsapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|c:\\users\\home\\documents\\github\\eternal-return_match-seacher\\bsapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53C7D94-8491-4C73-8FDA-A4FD9B05AEFE}|Eternal Return_Match Searcher.csproj|solutionrelative:bsapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,8 +62,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -86,12 +90,11 @@
               "ToolTip": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\HelpBox.cs [Design]",
               "RelativeToolTip": "HelpBox.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T11:43:07.709Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-09T11:43:07.709Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "UserSearchResult.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\UserSearchResult.cs",
               "RelativeDocumentMoniker": "UserSearchResult.cs",
@@ -103,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "UserSearchResult.cs",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\UserSearchResult.cs",
               "RelativeDocumentMoniker": "UserSearchResult.cs",
@@ -111,12 +114,11 @@
               "RelativeToolTip": "UserSearchResult.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T13:23:37.806Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T13:23:37.806Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "UserSearchResult.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\UserSearchResult.Designer.cs",
               "RelativeDocumentMoniker": "UserSearchResult.Designer.cs",
@@ -124,12 +126,11 @@
               "RelativeToolTip": "UserSearchResult.Designer.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAAwAkAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T13:21:28.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T13:21:28.901Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "UserSearchResult.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\UserSearchResult.cs",
               "RelativeDocumentMoniker": "UserSearchResult.cs",
@@ -140,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "ScreenCapture.cs",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\ScreenCapture.cs",
               "RelativeDocumentMoniker": "ScreenCapture.cs",
@@ -148,12 +149,11 @@
               "RelativeToolTip": "ScreenCapture.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAD4vy8AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T11:20:18.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T11:20:18.3Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "OCR.cs",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\OCR.cs",
               "RelativeDocumentMoniker": "OCR.cs",
@@ -161,12 +161,11 @@
               "RelativeToolTip": "OCR.cs",
               "ViewState": "AQIAANIAAAAAAAAAAAAewOIAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T09:00:13.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T09:00:13.972Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "MainApp.cs",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\MainApp.cs",
               "RelativeDocumentMoniker": "MainApp.cs",
@@ -174,16 +173,11 @@
               "RelativeToolTip": "MainApp.cs",
               "ViewState": "AQIAADYAAAAAAAAAAAAYwAgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T13:40:28.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "WhenOpened": "2024-07-29T13:40:28.145Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "MainForm.Designer.cs",
@@ -191,12 +185,11 @@
               "RelativeToolTip": "MainForm.Designer.cs",
               "ViewState": "AQIAALsKAAAAAAAAAAAAAK0LAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T13:33:18.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-29T13:33:18.55Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
@@ -217,20 +210,18 @@
               "RelativeToolTip": "BSAPI.cs",
               "ViewState": "AQIAAB4BAAAAAAAAAAAtwDMBAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T13:46:20.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-29T13:46:20.861Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\Home\\Documents\\GitHub\\Eternal-Return_Match-Seacher\\MainForm.cs [Design]",
               "RelativeToolTip": "MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T07:25:08.118Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-09T07:25:08.118Z"
             }
           ]
         }
