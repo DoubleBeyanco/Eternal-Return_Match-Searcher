@@ -27,10 +27,22 @@ public class OCR
 
     public void PlayerResult()
     {
-        OCRDetect_Ko();
+        Thread t1 = new Thread(OCRDetect_Ko);
+        Thread t2 = new Thread(OCRDetect_Cn);
+        Thread t3 = new Thread(OCRDetect_Jp);
+
+        t1.Start();
+        t2.Start();
+        t3.Start();
+
+        t1.Join();
+        t2.Join();
+        t3.Join();
+
+        /*OCRDetect_Ko();
         OCRDetect_Cn();
-        OCRDetect_Jp();
-        //OCRDetect_En();
+        OCRDetect_En();
+        OCRDetect_Jp();*/
 
         PlayerA = OCRDetect(AnalyzeData(Player.A))[(int)Player.A];
         PlayerB = OCRDetect(AnalyzeData(Player.B))[(int)Player.B];
@@ -68,7 +80,7 @@ public class OCR
     {
         // 이 방식 활용하면 최소 한국어 중국어 영어 일본어를 전체 순회하면서 일치율 0.9가 넘는 애들로만 닉을 추적해야할 듯하다.
         // 좌표값은 큰 차이가 안날 것이기 때문에 좌표 범위 설정하고 그 안에 있는 문자열만 추적하도록 하면될 듯하다.
-        string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+
         FullOcrModel _model;
         switch (_language)
         {
@@ -98,7 +110,7 @@ public class OCR
         })
         {
             // Load local file by following code:
-            using (Mat src2 = Cv2.ImRead(path + @"\images\" + "Detect" + @".png"))
+            using (Mat src2 = Cv2.ImRead(MainApp.path + @"\images\" + "Detect" + @".png"))
             //using (Mat src = Cv2.ImDecode(sampleImageData, ImreadModes.Color))
             {
                 PaddleOcrResult result = all.Run(src2);
@@ -128,7 +140,7 @@ public class OCR
     {
         // 이 방식 활용하면 최소 한국어 중국어 영어 일본어를 전체 순회하면서 일치율 0.9가 넘는 애들로만 닉을 추적해야할 듯하다.
         // 좌표값은 큰 차이가 안날 것이기 때문에 좌표 범위 설정하고 그 안에 있는 문자열만 추적하도록 하면될 듯하다.
-        string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+
 
         FullOcrModel model = LocalFullModels.KoreanV4;
 
@@ -139,7 +151,7 @@ public class OCR
         })
         {
             // Load local file by following code:
-            using (Mat src2 = Cv2.ImRead(path + @"\images\" + "Detect" + @".png"))
+            using (Mat src2 = Cv2.ImRead(MainApp.path + @"\images\" + "Detect" + @".png"))
             //using (Mat src = Cv2.ImDecode(sampleImageData, ImreadModes.Color))
             {
                 PaddleOcrResult result = all.Run(src2);
@@ -166,7 +178,7 @@ public class OCR
     {
         // 이 방식 활용하면 최소 한국어 중국어 영어 일본어를 전체 순회하면서 일치율 0.9가 넘는 애들로만 닉을 추적해야할 듯하다.
         // 좌표값은 큰 차이가 안날 것이기 때문에 좌표 범위 설정하고 그 안에 있는 문자열만 추적하도록 하면될 듯하다.
-        string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+
 
         FullOcrModel model = LocalFullModels.ChineseV4;
 
@@ -177,7 +189,7 @@ public class OCR
         })
         {
             // Load local file by following code:
-            using (Mat src2 = Cv2.ImRead(path + @"\images\" + "Detect" + @".png"))
+            using (Mat src2 = Cv2.ImRead(MainApp.path + @"\images\" + "Detect" + @".png"))
             //using (Mat src = Cv2.ImDecode(sampleImageData, ImreadModes.Color))
             {
                 PaddleOcrResult result = all.Run(src2);
@@ -204,7 +216,7 @@ public class OCR
     {
         // 이 방식 활용하면 최소 한국어 중국어 영어 일본어를 전체 순회하면서 일치율 0.9가 넘는 애들로만 닉을 추적해야할 듯하다.
         // 좌표값은 큰 차이가 안날 것이기 때문에 좌표 범위 설정하고 그 안에 있는 문자열만 추적하도록 하면될 듯하다.
-        string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+
 
         FullOcrModel model = LocalFullModels.JapanV4;
 
@@ -215,7 +227,7 @@ public class OCR
         })
         {
             // Load local file by following code:
-            using (Mat src2 = Cv2.ImRead(path + @"\images\" + "Detect" + @".png"))
+            using (Mat src2 = Cv2.ImRead(MainApp.path + @"\images\" + "Detect" + @".png"))
             //using (Mat src = Cv2.ImDecode(sampleImageData, ImreadModes.Color))
             {
                 PaddleOcrResult result = all.Run(src2);
@@ -242,7 +254,7 @@ public class OCR
     {
         // 이 방식 활용하면 최소 한국어 중국어 영어 일본어를 전체 순회하면서 일치율 0.9가 넘는 애들로만 닉을 추적해야할 듯하다.
         // 좌표값은 큰 차이가 안날 것이기 때문에 좌표 범위 설정하고 그 안에 있는 문자열만 추적하도록 하면될 듯하다.
-        string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+
 
         FullOcrModel model = LocalFullModels.EnglishV4;
 
@@ -253,7 +265,7 @@ public class OCR
         })
         {
             // Load local file by following code:
-            using (Mat src2 = Cv2.ImRead(path + @"\images\" + "Detect" + @".png"))
+            using (Mat src2 = Cv2.ImRead(MainApp.path + @"\images\" + "Detect" + @".png"))
             //using (Mat src = Cv2.ImDecode(sampleImageData, ImreadModes.Color))
             {
                 PaddleOcrResult result = all.Run(src2);

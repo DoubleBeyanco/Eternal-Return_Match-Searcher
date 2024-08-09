@@ -1,37 +1,32 @@
 using Ethernal_Return_Match_Seacher;
-using System.Diagnostics;
 using System.Reflection;
-using static System.Windows.Forms.AxHost;
+
 
 
 public class MainApp
 {
     static MainForm main = new MainForm();
     static UserSearchResult searchResult = new UserSearchResult();
+    public static string path = string.Empty;
+    //public static string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
     private static void Main(string[] args)
     {
-        string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+        ApplicationConfiguration.Initialize();
+        path = Path.GetTempPath();
         DirectoryInfo di = new DirectoryInfo(path + @"\images");
 
         if (di.Exists == false)
         {
             di.Create();
         }
-        OCR ocr = new OCR();
-        
-
-        /*test.PlayerResult();
-
-        Console.WriteLine("PlayerA: " + test.PlayerA);
-        Console.WriteLine("PlayerB: " + test.PlayerB);
-        Console.WriteLine("PlayerC: " + test.PlayerC);*/
-
         BSAPI.InputCharactorKorString();
+        BSAPI.RunRankRate();
 
-        ApplicationConfiguration.Initialize();
         main.OnClickCallback = CheckUserStat;
         main.OnSerarchCallback = CheckTeamUserStat;
         Application.Run(main);
+
+        di.Delete(true);
     }
 
 
@@ -109,6 +104,30 @@ public class MainApp
         main.P1_Avg_TK_Text.Text = "지원예정...";
         main.P1_Avg_Kill_Text.Text = userstat.averageKills.ToString();
         main.P1_Avg_Assist_Text.Text = userstat.averageAssistants.ToString();
+        main.P1_M1_CharacterCode.Text = BSAPI.CharacterStringTable[userstat.Most1.characterCode];
+        main.P1_M1_totalGames.Text = userstat.Most1.totalGames.ToString();
+        main.P1_M1_maxKill.Text = userstat.Most1.maxKillings.ToString();
+        main.P1_M1_Top3.Text = userstat.Most1.top3.ToString();
+        main.P1_M1_Top3Rate.Text = CalculateWinRate(userstat.Most1.top3, userstat.Most1.totalGames).ToString() + "%";
+        main.P1_M1_wins.Text = userstat.Most1.wins.ToString();
+        main.P1_M1_WinRate.Text = CalculateWinRate(userstat.Most1.wins, userstat.Most1.totalGames).ToString() + "%";
+        main.P1_M1_AvgRank.Text = userstat.Most1.averageRank.ToString();
+        main.P1_M2_CharacterCode.Text = BSAPI.CharacterStringTable[userstat.Most2.characterCode];
+        main.P1_M2_totalGames.Text = userstat.Most2.totalGames.ToString();
+        main.P1_M2_maxKill.Text = userstat.Most2.maxKillings.ToString();
+        main.P1_M2_Top3.Text = userstat.Most2.top3.ToString();
+        main.P1_M2_Top3Rate.Text = CalculateWinRate(userstat.Most2.top3, userstat.Most2.totalGames).ToString() + "%";
+        main.P1_M2_wins.Text = userstat.Most2.wins.ToString();
+        main.P1_M2_WinRate.Text = CalculateWinRate(userstat.Most2.wins, userstat.Most2.totalGames).ToString() + "%";
+        main.P1_M2_AvgRank.Text = userstat.Most2.averageRank.ToString();
+        main.P1_M3_CharacterCode.Text = BSAPI.CharacterStringTable[userstat.Most3.characterCode];
+        main.P1_M3_totalGames.Text = userstat.Most3.totalGames.ToString();
+        main.P1_M3_maxKill.Text = userstat.Most3.maxKillings.ToString();
+        main.P1_M3_Top3.Text = userstat.Most3.top3.ToString();
+        main.P1_M3_Top3Rate.Text = CalculateWinRate(userstat.Most3.top3, userstat.Most3.totalGames).ToString() + "%";
+        main.P1_M3_wins.Text = userstat.Most3.wins.ToString();
+        main.P1_M3_WinRate.Text = CalculateWinRate(userstat.Most3.wins, userstat.Most3.totalGames).ToString() + "%";
+        main.P1_M3_AvgRank.Text = userstat.Most3.averageRank.ToString();
     }
     private static void InputUserBInfo(BSAPI.UserStat userstat)
     {
@@ -124,6 +143,30 @@ public class MainApp
         main.P2_Avg_TK_Text.Text = "지원예정...";
         main.P2_Avg_Kill_Text.Text = userstat.averageKills.ToString();
         main.P2_Avg_Assist_Text.Text = userstat.averageAssistants.ToString();
+        main.P2_M1_CharacterCode.Text = BSAPI.CharacterStringTable[userstat.Most1.characterCode];
+        main.P2_M1_totalGames.Text = userstat.Most1.totalGames.ToString();
+        main.P2_M1_maxKill.Text = userstat.Most1.maxKillings.ToString();
+        main.P2_M1_Top3.Text = userstat.Most1.top3.ToString();
+        main.P2_M1_Top3Rate.Text = CalculateWinRate(userstat.Most1.top3, userstat.Most1.totalGames).ToString() + "%";
+        main.P2_M1_wins.Text = userstat.Most1.wins.ToString();
+        main.P2_M1_WinRate.Text = CalculateWinRate(userstat.Most1.wins, userstat.Most1.totalGames).ToString() + "%";
+        main.P2_M1_AvgRank.Text = userstat.Most1.averageRank.ToString();
+        main.P2_M2_CharacterCode.Text = BSAPI.CharacterStringTable[userstat.Most2.characterCode];
+        main.P2_M2_totalGames.Text = userstat.Most2.totalGames.ToString();
+        main.P2_M2_maxKill.Text = userstat.Most2.maxKillings.ToString();
+        main.P2_M2_Top3.Text = userstat.Most2.top3.ToString();
+        main.P2_M2_Top3Rate.Text = CalculateWinRate(userstat.Most2.top3, userstat.Most2.totalGames).ToString() + "%";
+        main.P2_M2_wins.Text = userstat.Most2.wins.ToString();
+        main.P2_M2_WinRate.Text = CalculateWinRate(userstat.Most2.wins, userstat.Most2.totalGames).ToString() + "%";
+        main.P2_M2_AvgRank.Text = userstat.Most2.averageRank.ToString();
+        main.P2_M3_CharacterCode.Text = BSAPI.CharacterStringTable[userstat.Most3.characterCode];
+        main.P2_M3_totalGames.Text = userstat.Most3.totalGames.ToString();
+        main.P2_M3_maxKill.Text = userstat.Most3.maxKillings.ToString();
+        main.P2_M3_Top3.Text = userstat.Most3.top3.ToString();
+        main.P2_M3_Top3Rate.Text = CalculateWinRate(userstat.Most3.top3, userstat.Most3.totalGames).ToString() + "%";
+        main.P2_M3_wins.Text = userstat.Most3.wins.ToString();
+        main.P2_M3_WinRate.Text = CalculateWinRate(userstat.Most3.wins, userstat.Most3.totalGames).ToString() + "%";
+        main.P2_M3_AvgRank.Text = userstat.Most3.averageRank.ToString();
     }
     private static void InputUserCInfo(BSAPI.UserStat userstat)
     {
@@ -139,6 +182,30 @@ public class MainApp
         main.P3_Avg_TK_Text.Text = "지원예정...";
         main.P3_Avg_Kill_Text.Text = userstat.averageKills.ToString();
         main.P3_Avg_Assist_Text.Text = userstat.averageAssistants.ToString();
+        main.P3_M1_CharacterCode.Text = BSAPI.CharacterStringTable[userstat.Most1.characterCode];
+        main.P3_M1_totalGames.Text = userstat.Most1.totalGames.ToString();
+        main.P3_M1_maxKill.Text = userstat.Most1.maxKillings.ToString();
+        main.P3_M1_Top3.Text = userstat.Most1.top3.ToString();
+        main.P3_M1_Top3Rate.Text = CalculateWinRate(userstat.Most1.top3, userstat.Most1.totalGames).ToString() + "%";
+        main.P3_M1_wins.Text = userstat.Most1.wins.ToString();
+        main.P3_M1_WinRate.Text = CalculateWinRate(userstat.Most1.wins, userstat.Most1.totalGames).ToString() + "%";
+        main.P3_M1_AvgRank.Text = userstat.Most1.averageRank.ToString();
+        main.P3_M2_CharacterCode.Text = BSAPI.CharacterStringTable[userstat.Most2.characterCode];
+        main.P3_M2_totalGames.Text = userstat.Most2.totalGames.ToString();
+        main.P3_M2_maxKill.Text = userstat.Most2.maxKillings.ToString();
+        main.P3_M2_Top3.Text = userstat.Most2.top3.ToString();
+        main.P3_M2_Top3Rate.Text = CalculateWinRate(userstat.Most2.top3, userstat.Most2.totalGames).ToString() + "%";
+        main.P3_M2_wins.Text = userstat.Most2.wins.ToString();
+        main.P3_M2_WinRate.Text = CalculateWinRate(userstat.Most2.wins, userstat.Most2.totalGames).ToString() + "%";
+        main.P3_M2_AvgRank.Text = userstat.Most2.averageRank.ToString();
+        main.P3_M3_CharacterCode.Text = BSAPI.CharacterStringTable[userstat.Most3.characterCode];
+        main.P3_M3_totalGames.Text = userstat.Most3.totalGames.ToString();
+        main.P3_M3_maxKill.Text = userstat.Most3.maxKillings.ToString();
+        main.P3_M3_Top3.Text = userstat.Most3.top3.ToString();
+        main.P3_M3_Top3Rate.Text = CalculateWinRate(userstat.Most3.top3, userstat.Most3.totalGames).ToString() + "%";
+        main.P3_M3_wins.Text = userstat.Most3.wins.ToString();
+        main.P3_M3_WinRate.Text = CalculateWinRate(userstat.Most3.wins, userstat.Most3.totalGames).ToString() + "%";
+        main.P3_M3_AvgRank.Text = userstat.Most3.averageRank.ToString();
     }
     private static void InputUserInfo(BSAPI.UserStat userstat)
     {
@@ -154,5 +221,37 @@ public class MainApp
         searchResult.Avg_TK_Text.Text = "지원예정...";
         searchResult.Avg_Kill_Text.Text = userstat.averageKills.ToString();
         searchResult.Avg_Assist_Text.Text = userstat.averageAssistants.ToString();
+        searchResult.M1_CharacterCode.Text = BSAPI.CharacterStringTable[userstat.Most1.characterCode];
+        searchResult.M1_totalGames.Text = userstat.Most1.totalGames.ToString();
+        searchResult.M1_maxKill.Text = userstat.Most1.maxKillings.ToString();
+        searchResult.M1_Top3.Text = userstat.Most1.top3.ToString();
+        searchResult.M1_Top3Rate.Text = CalculateWinRate(userstat.Most1.top3, userstat.Most1.totalGames).ToString() + "%";
+        searchResult.M1_wins.Text = userstat.Most1.wins.ToString();
+        searchResult.M1_WinRate.Text = CalculateWinRate(userstat.Most1.wins, userstat.Most1.totalGames).ToString() + "%";
+        searchResult.M1_AvgRank.Text = userstat.Most1.averageRank.ToString();
+        searchResult.M2_CharacterCode.Text = BSAPI.CharacterStringTable[userstat.Most2.characterCode];
+        searchResult.M2_totalGames.Text = userstat.Most2.totalGames.ToString();
+        searchResult.M2_maxKill.Text = userstat.Most2.maxKillings.ToString();
+        searchResult.M2_Top3.Text = userstat.Most2.top3.ToString();
+        searchResult.M2_Top3Rate.Text = CalculateWinRate(userstat.Most2.top3, userstat.Most2.totalGames).ToString() + "%";
+        searchResult.M2_wins.Text = userstat.Most2.wins.ToString();
+        searchResult.M2_WinRate.Text = CalculateWinRate(userstat.Most2.wins, userstat.Most2.totalGames).ToString() + "%";
+        searchResult.M2_AvgRank.Text = userstat.Most2.averageRank.ToString();
+        searchResult.M3_CharacterCode.Text = BSAPI.CharacterStringTable[userstat.Most3.characterCode];
+        searchResult.M3_totalGames.Text = userstat.Most3.totalGames.ToString();
+        searchResult.M3_maxKill.Text = userstat.Most3.maxKillings.ToString();
+        searchResult.M3_Top3.Text = userstat.Most3.top3.ToString();
+        searchResult.M3_Top3Rate.Text = CalculateWinRate(userstat.Most3.top3, userstat.Most3.totalGames).ToString() + "%";
+        searchResult.M3_wins.Text = userstat.Most3.wins.ToString();
+        searchResult.M3_WinRate.Text = CalculateWinRate(userstat.Most3.wins, userstat.Most3.totalGames).ToString() + "%";
+        searchResult.M3_AvgRank.Text = userstat.Most3.averageRank.ToString();
+    }
+
+    private static double CalculateWinRate(int wins, int totalGames)
+    {
+        if (totalGames == 0)
+            return 0;
+        double rate = ((double)wins / totalGames) * 100;
+        return Math.Round(rate, 1);
     }
 }

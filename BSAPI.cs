@@ -65,6 +65,7 @@ class BSAPI
 
     public enum characterCode
     {
+        None = 0,
         Jackie = 1,
         Aya = 2,
         Fiora = 3,
@@ -143,7 +144,8 @@ class BSAPI
     }
     #endregion
     public static Dictionary<characterCode, string> CharacterStringTable = new Dictionary<characterCode, string>();
-
+    public static int Mithril = 0;
+    public static int Eternity = 0;
 
     /// <summary>
     /// Find User ID, Return Integer Value;
@@ -340,7 +342,7 @@ class BSAPI
                 charstattemp[i].maxKillings = (int)jj["maxKillings"];
                 charstattemp[i].top3 = (int)jj["top3"];
                 charstattemp[i].wins = (int)jj["wins"];
-                charstattemp[i].top3Rate = (float)jj["top3Rate"];
+                charstattemp[i].top3Rate = (float)jj["top3Rate"] * 100;
                 charstattemp[i].averageRank = (float)jj["averageRank"];
             }
 
@@ -364,9 +366,15 @@ class BSAPI
 
     }
 
-    private static int MithrilMMR()
+    public static void RunRankRate()
     {
-        string url = $"https://open-api.bser.io//v1/rank/top/{GetCurSeasonNum()}/3";
+        MithrilMMR();
+        EternityMMR();
+    }
+    private static void MithrilMMR()
+    {
+        int season = GetCurSeasonNum();
+        string url = $"https://open-api.bser.io/v1/rank/top/{season}/3";
 
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
 
@@ -389,13 +397,13 @@ class BSAPI
                 {
                     if ((int)j["rank"] == 700)
                     {
-                        return (int)j["mmr"];
+                        Mithril = (int)j["mmr"];
                     }
                 }
             }
             else
             {
-                return -1;
+
             }
 
         }
@@ -404,11 +412,11 @@ class BSAPI
             Console.WriteLine("Exception: " + ex.Message);
         }
 
-        return 0;
     }
-    private static int EternityMMR()
+    private static void EternityMMR()
     {
-        string url = $"https://open-api.bser.io//v1/rank/top/{GetCurSeasonNum()}/3";
+        int season = GetCurSeasonNum();
+        string url = $"https://open-api.bser.io/v1/rank/top/{season}/3";
 
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
 
@@ -431,13 +439,13 @@ class BSAPI
                 {
                     if ((int)j["rank"] == 200)
                     {
-                        return (int)j["mmr"];
+                        Eternity = (int)j["mmr"];
                     }
                 }
             }
             else
             {
-                return -1;
+
             }
 
         }
@@ -445,12 +453,11 @@ class BSAPI
         {
             Console.WriteLine("Exception: " + ex.Message);
         }
-
-        return 0;
     }
 
     public static void InputCharactorKorString()
     {
+        CharacterStringTable.Add(characterCode.None, "없음");
         CharacterStringTable.Add(characterCode.Jackie, "재키");
         CharacterStringTable.Add(characterCode.Aya, "아야");
         CharacterStringTable.Add(characterCode.Fiora, "피오라");
@@ -530,8 +537,7 @@ class BSAPI
 
     private static string CalcRankTier(int _mmr)
     {
-        int mithril = MithrilMMR();
-        int eternity = EternityMMR();
+
         if (_mmr >= 0 && _mmr <= 199)
         {
             return "아이언4 - " + _mmr;
@@ -628,17 +634,17 @@ class BSAPI
         {
             return "다이아몬드1 - " + (_mmr - 6400);
         }
-        else if (_mmr >= 6800)
+        else if (_mmr >= 6800 && _mmr <= Mithril)
         {
             return "미스릴 - " + (_mmr - 6800);
         }
-        else if (_mmr >= mithril)
+        else if (_mmr >= Mithril && _mmr <= Eternity)
         {
-            return "데미갓 - " + (_mmr - mithril);
+            return "데미갓 - " + (_mmr - 7000);
         }
-        else if (_mmr >= eternity)
+        else if (_mmr >= Eternity)
         {
-            return "이터니티 - " + (_mmr - eternity);
+            return "이터니티 - " + (_mmr - 7000);
         }
         else
         {

@@ -8,11 +8,6 @@ namespace Ethernal_Return_Match_Seacher
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtbox_TextChanged(object sender, EventArgs e)
         {
             Input_Text = Input_nick.Text;

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 using System.Drawing.Imaging;
 using System.Diagnostics;
-using System.Reflection;
-using Sdcb.PaddleOCR.Models;
+
 
 public class ScreenCapture
 {
@@ -70,13 +66,13 @@ public class ScreenCapture
 
     public void ScreenShot()
     {
-        string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+
         Bitmap bmpTmp;
 
         bmpTmp = CaptureApplication("EternalReturn");
         if (bmpTmp != null)
         {
-            bmpTmp.Save(path + @"\images\" + "Detect" + @".png", ImageFormat.Png);
+            bmpTmp.Save(MainApp.path + @"\images\" + "Detect" + @".png", ImageFormat.Png);
         }
         else
         {
