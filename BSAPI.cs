@@ -13,6 +13,7 @@ class BSAPI
         public matchMode matchingMode; // MatchingMode, Check Enum
         public teamType matchingTeamMode; // TeamType, Check Enum
         public int mmr; // user MMR
+        public string rankTier;
         public string nickname; // Nickname of the user
         public int rank; // User ranking (순위)
         public int rankSize; // Total pool of users in the current rank ( 전체 랭크 유저수)
@@ -309,6 +310,7 @@ class BSAPI
             temp.matchingMode = (matchMode)(int)j["matchingMode"];
             temp.matchingTeamMode = (teamType)(int)j["matchingTeamMode"];
             temp.mmr = (int)j["mmr"];
+            temp.rankTier = CalcRankTier(temp.mmr);
             temp.nickname = (string)j["nickname"];
             temp.rank = (int)j["rank"];
             temp.rankSize = (int)j["rankSize"];
@@ -360,7 +362,91 @@ class BSAPI
             return temp;
         }
 
-        
+    }
+
+    private static int MithrilMMR()
+    {
+        string url = $"https://open-api.bser.io//v1/rank/top/{GetCurSeasonNum()}/3";
+
+        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+
+        request.Method = "GET";
+        request.ContentType = "application/json";
+        request.Headers.Add("x-api-key", APIKey);
+
+        try
+        {
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            StreamReader respStream = new StreamReader(response.GetResponseStream());
+            string resp = respStream.ReadToEnd();
+            respStream.Close();
+
+            JObject ret = JObject.Parse(resp);
+
+            if ((int)ret["code"] == 200)
+            {
+                foreach (JObject j in ret["topRanks"])
+                {
+                    if ((int)j["rank"] == 700)
+                    {
+                        return (int)j["mmr"];
+                    }
+                }
+            }
+            else
+            {
+                return -1;
+            }
+
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Exception: " + ex.Message);
+        }
+
+        return 0;
+    }
+    private static int EternityMMR()
+    {
+        string url = $"https://open-api.bser.io//v1/rank/top/{GetCurSeasonNum()}/3";
+
+        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+
+        request.Method = "GET";
+        request.ContentType = "application/json";
+        request.Headers.Add("x-api-key", APIKey);
+
+        try
+        {
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            StreamReader respStream = new StreamReader(response.GetResponseStream());
+            string resp = respStream.ReadToEnd();
+            respStream.Close();
+
+            JObject ret = JObject.Parse(resp);
+
+            if ((int)ret["code"] == 200)
+            {
+                foreach (JObject j in ret["topRanks"])
+                {
+                    if ((int)j["rank"] == 200)
+                    {
+                        return (int)j["mmr"];
+                    }
+                }
+            }
+            else
+            {
+                return -1;
+            }
+
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Exception: " + ex.Message);
+        }
+
+        return 0;
     }
 
     public static void InputCharactorKorString()
@@ -440,5 +526,123 @@ class BSAPI
         CharacterStringTable.Add(characterCode.Charlotte, "샬럿");
         CharacterStringTable.Add(characterCode.Darko, "다르코");
         CharacterStringTable.Add(characterCode.Lenore, "르노어");
+    }
+
+    private static string CalcRankTier(int _mmr)
+    {
+        int mithril = MithrilMMR();
+        int eternity = EternityMMR();
+        if (_mmr >= 0 && _mmr <= 199)
+        {
+            return "아이언4 - " + _mmr;
+        }
+        else if (_mmr >= 200 && _mmr <= 399)
+        {
+            return "아이언3 - " + (_mmr - 200);
+        }
+        else if (_mmr >= 400 && _mmr <= 599)
+        {
+            return "아이언2 - " + (_mmr - 400);
+        }
+        else if (_mmr >= 600 && _mmr <= 799)
+        {
+            return "아이언1 - " + (_mmr - 600);
+        }
+        else if (_mmr >= 800 && _mmr <= 999)
+        {
+            return "브론즈4 - " + (_mmr - 800);
+        }
+        else if (_mmr >= 1000 && _mmr <= 1199)
+        {
+            return "브론즈3 - " + (_mmr - 1000);
+        }
+        else if (_mmr >= 1200 && _mmr <= 1399)
+        {
+            return "브론즈2 - " + (_mmr - 1200);
+        }
+        else if (_mmr >= 1400 && _mmr <= 1599)
+        {
+            return "브론즈1 - " + (_mmr - 1400);
+        }
+        else if (_mmr >= 1600 && _mmr <= 1849)
+        {
+            return "실버4 - " + (_mmr - 1600);
+        }
+        else if (_mmr >= 1850 && _mmr <= 2099)
+        {
+            return "실버3 - " + (_mmr - 1850);
+        }
+        else if (_mmr >= 2100 && _mmr <= 2349)
+        {
+            return "실버2 - " + (_mmr - 2100);
+        }
+        else if (_mmr >= 2350 && _mmr <= 2599)
+        {
+            return "실버1 - " + (_mmr - 2350);
+        }
+        else if (_mmr >= 2600 && _mmr <= 2899)
+        {
+            return "골드4 - " + (_mmr - 2600);
+        }
+        else if (_mmr >= 2900 && _mmr <= 3199)
+        {
+            return "골드3 - " + (_mmr - 2900);
+        }
+        else if (_mmr >= 3200 && _mmr <= 3499)
+        {
+            return "골드2 - " + (_mmr - 3200);
+        }
+        else if (_mmr >= 3500 && _mmr <= 3799)
+        {
+            return "골드1 - " + (_mmr - 3500);
+        }
+        else if (_mmr >= 3800 && _mmr <= 4149)
+        {
+            return "플래티넘4 - " + (_mmr - 3800);
+        }
+        else if (_mmr >= 4150 && _mmr <= 4499)
+        {
+            return "플래티넘3 - " + (_mmr - 4150);
+        }
+        else if (_mmr >= 4500 && _mmr <= 4849)
+        {
+            return "플래티넘2 - " + (_mmr - 4500);
+        }
+        else if (_mmr >= 4850 && _mmr <= 5199)
+        {
+            return "플래티넘1 - " + (_mmr - 4850);
+        }
+        else if (_mmr >= 5200 && _mmr <= 5599)
+        {
+            return "다이아몬드4 - " + (_mmr - 5200);
+        }
+        else if (_mmr >= 5600 && _mmr <= 5999)
+        {
+            return "다이아몬드3 - " + (_mmr - 5600);
+        }
+        else if (_mmr >= 6000 && _mmr <= 6399)
+        {
+            return "다이아몬드2 - " + (_mmr - 6000);
+        }
+        else if (_mmr >= 6400 && _mmr <= 6799)
+        {
+            return "다이아몬드1 - " + (_mmr - 6400);
+        }
+        else if (_mmr >= 6800)
+        {
+            return "미스릴 - " + (_mmr - 6800);
+        }
+        else if (_mmr >= mithril)
+        {
+            return "데미갓 - " + (_mmr - mithril);
+        }
+        else if (_mmr >= eternity)
+        {
+            return "이터니티 - " + (_mmr - eternity);
+        }
+        else
+        {
+            return "Unknown tier - " + _mmr;
+        }
     }
 }
